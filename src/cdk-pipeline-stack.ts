@@ -43,8 +43,8 @@ export class CdkPipelineStack extends Stack {
       synth: new ShellStep('Synth', {
         input: codePipelineSource,
         commands: [
-          // 'yarn install --frozen-lockfile',
-          'npm install',
+          // 'npm install',
+          'yarn install --frozen-lockfile',
           'npx projen build',
           'npx projen synth',
         ],
