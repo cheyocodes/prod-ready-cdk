@@ -9,8 +9,6 @@ const devEnv = {
 
 const app = new App();
 
-// new LambdaStack(app, 'prod-ready-cdk-dev', { env: devEnv });
-// new MyStack(app, 'prod-ready-cdk-prod', { env: prodEnv });
 new CdkPipelineStack(app, 'CdkPipelineStack', { env: devEnv });
 
 app.synth();
