@@ -29,7 +29,6 @@ export class CdkPipelineStack extends Stack {
         ],
       }),
     });
-
     cdkPipeline.addStage(new LambdaStage(this, 'dev'));
-	}
+  }
 }
